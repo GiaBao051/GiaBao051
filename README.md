@@ -19,12 +19,22 @@ IT Student | Software Engineering Enthusiast | Applied Computing
 
 ### 🔤 Programming Languages
 - **C / C++** – OOP fundamentals, data structures, problem solving  
+- **C# (.NET)** – object-oriented programming, backend development  
 - **Java** – object-oriented design, basic backend concepts  
 - **Python** – scripting, data handling, basic analysis  
+
+### 🖥 Backend Development
+- **.NET / ASP.NET Core** – RESTful APIs, layered architecture  
+- **Entity Framework Core** – ORM, code-first approach  
+- Authentication & authorization fundamentals  
 
 ### 🌐 Web Development
 - **HTML5 / CSS3** – semantic markup, responsive layout  
 - **JavaScript** – DOM manipulation, basic interactivity  
+
+### 🗄 Databases
+- **Microsoft SQL Server** – relational database design, T-SQL  
+- Basic query optimization & normalization  
 
 ### 🧩 Other Skills
 - Object-Oriented Programming (OOP)  
@@ -54,7 +64,13 @@ IT Student | Software Engineering Enthusiast | Applied Computing
 
 ### Programming Languages
 <p>
-<img src="https://skillicons.dev/icons?i=c,cpp,java,python" />
+<img src="https://skillicons.dev/icons?i=c,cpp,cs,java,python" />
+</p>
+
+### Backend & Frameworks
+<p>
+<img src="https://skillicons.dev/icons?i=dotnet" />
+<img src="https://skillicons.dev/icons?i=visualstudio" />
 </p>
 
 ### Web Development
@@ -62,7 +78,13 @@ IT Student | Software Engineering Enthusiast | Applied Computing
 <img src="https://skillicons.dev/icons?i=html,css,js" />
 </p>
 
-### Tools & Environment
+### Databases
+<p>
+<img src="https://skillicons.dev/icons?i=mysql,postgresql" />
+<img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white"/>
+</p>
+
+### Tools
 <p>
 <img src="https://skillicons.dev/icons?i=git,github,vscode" />
 </p>
