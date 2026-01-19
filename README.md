@@ -80,7 +80,6 @@ IT Student | Software Engineering Enthusiast | Applied Computing
 
 ### Databases
 <p>
-<img src="https://skillicons.dev/icons?i=mysql,postgresql" />
 <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white"/>
 </p>
 
