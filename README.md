@@ -62,7 +62,7 @@ IT Student | Software Engineering Enthusiast | Applied Computing
 
 ### 🗄 Database Design Challenge – University Level (2025–2026)
 <p align="center">
-  <img src="./image/database-design-challenge-2025.jpg" width="600">
+  <img src="./image/database-design-challenge-2025.jpg" width="300">
 </p>
 
 Awarded **Encouragement Prize** in an academic competition organized by  
@@ -74,12 +74,12 @@ the Faculty of Information Technology, University of Industry and Trade (HUIT).
 
 **Topic 1: Rice Pest Classification and Segmentation Using Images (YOLO + SAM-ViT)**  
 <p align="center">
-  <img src="./image/data-science-huit-yolo-samvit.png" width="600">
+  <img src="./image/data-science-huit-yolo-samvit.png" width="300">
 </p>
 
 **Topic 2: Skin Cancer Classification Using Vision Transformer (ViT)**  
 <p align="center">
-  <img src="./image/data-science-huit-vit-skin-cancer.png" width="600">
+  <img src="./image/data-science-huit-vit-skin-cancer.png" width="300">
 </p>
 
 ---
