@@ -56,7 +56,31 @@ IT Student | Software Engineering Enthusiast | Applied Computing
   Static website focusing on layout, structure, and content presentation.
 
 - 📘 **OOP Summary**  
-  Summary notes and examples for Object-Oriented Programming concepts using C++.
+  Summary notes and examples for Object-Oriented Programming concepts using C#.
+
+## 🏆 Notable Activities & Achievements
+
+### 🗄 Database Design Challenge – University Level (2025–2026)
+<p align="center">
+  <img src="assets/database-design-challenge-2025.jpg" width="600"/>
+</p>
+
+Awarded **Encouragement Prize** in an academic competition organized by  
+the Faculty of Information Technology, University of Industry and Trade (HUIT).
+
+---
+
+### 📊 University-level Data Science Competition (Final Round)
+
+**Topic 1: Rice Pest Classification and Segmentation Using Images (YOLO + SAM-ViT)**  
+<p align="center">
+  <img src="assets/ds-yolo-samvit.jpg" width="600"/>
+</p>
+
+**Topic 2: Skin Cancer Classification Using Vision Transformer (ViT)**  
+<p align="center">
+  <img src="assets/ds-vit-skin-cancer.jpg" width="600"/>
+</p>
 
 ---
 
