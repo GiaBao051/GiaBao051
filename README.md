@@ -129,7 +129,7 @@ the Faculty of Information Technology, University of Industry and Trade (HUIT).
 <a href="mailto:tranduonggiabao0501email@gmail.com">
   <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
 </a>
-<a href="[https://facebook.com/your-facebook](https://www.facebook.com/peo.0501/)">
+<a href="[(https://www.facebook.com/peo.0501)]">
   <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"/>
 </a>
 </p>
