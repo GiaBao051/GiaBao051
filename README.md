@@ -574,11 +574,11 @@ demonstrating problem-solving ability and optimization-oriented thinking.
 
 <br/><br/>
 
-<img src="https://streak-stats.demolab.com?user=Peo051&theme=github-dark-blue&hide_border=true&background=0d1117&stroke=1a3a5c&ring=58A6FF&fire=FF6C37&currStreakLabel=58A6FF&sideLabels=c9d1d9&dates=8b949e&v=10" height="150"/>
+<img src="https://streak-stats.demolab.com?user=Peo051&theme=github-dark-blue&hide_border=true&background=0d1117&stroke=1a3a5c&ring=58A6FF&fire=FF6C37&currStreakLabel=58A6FF&sideLabels=c9d1d9&dates=8b949e&v=9" height="150"/>
 
 <br/><br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Peo051&theme=github-compact&bg_color=0d1117&color=58A6FF&line=58A6FF&point=ffffff&area=true&hide_border=true&v=10" width="95%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Peo051&theme=github-compact&bg_color=0d1117&color=58A6FF&line=58A6FF&point=ffffff&area=true&hide_border=true&v=9" width="95%"/>
 
 </div>
 
