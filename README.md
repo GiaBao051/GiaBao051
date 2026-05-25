@@ -43,7 +43,7 @@ goal: Become a reliable, impact-driven software engineer
       with strong fundamentals and a growth mindset.
 ```
 
-----
+---
 
 ### 🛠️ Technical Skills
 
@@ -54,6 +54,7 @@ goal: Become a reliable, impact-driven software engineer
   <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white"/>
   <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white"/>
 </p>
 
 #### Backend & Frameworks
@@ -61,6 +62,8 @@ goal: Become a reliable, impact-driven software engineer
   <img src="https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white"/>
   <img src="https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white"/>
   <img src="https://img.shields.io/badge/Entity%20Framework%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white"/>
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
   <img src="https://img.shields.io/badge/REST%20API-FF6C37?style=flat-square&logo=postman&logoColor=white"/>
 </p>
 
@@ -74,6 +77,8 @@ goal: Become a reliable, impact-driven software engineer
 #### Databases & Tools
 <p>
   <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black"/>
   <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/>
   <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white"/>
   <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white"/>
@@ -105,12 +110,24 @@ This project demonstrates proficiency in building enterprise-level desktop appli
 MVVM architecture pattern, database integration, and comprehensive business logic implementation for inventory,
 sales, and customer management.
 
-#### ☕ [Coffee_Shop_Management_WEB](https://github.com/Peo051/Coffee_Shop_Management)
+#### ☕ [Coffee_Shop_Management_WEB](https://github.com/Peo051/Coffee_Shop_Management_Web)
 **Tech:** HTML, CSS, JAVASCRIPT (Front-end Web)
 
 Team project focused on building a coffee chain management website with a modern interface,
 consistent brand identity, and user-centered experience. This project demonstrates the ability to
 develop structured front-end interfaces aligned with practical business requirements.
+
+#### 🎮 [Maze Duel](https://github.com/Peo051/Gemini_Game)
+**Tech:** HTML5 Canvas | CSS3 | JavaScript (ES6+) | MQTT
+
+A 2D platformer maze game featuring offline play with advanced AI behavior and online multiplayer support.
+Implements randomized Prim's algorithm for maze generation, CSP solver for map validation, and Tarjan's algorithm for tactical choke-point detection. AI decision-making is powered by a hybrid FSM + Utility AI model and Minimax search for competitive CPU gameplay.
+
+#### 🤟 [YOLOv8 Sign Language Recognition](https://github.com/Peo051/YOLOv8_Detect_SignLanguage)
+**Tech:** Python | YOLOv8 | OpenCV | Jupyter Notebook
+
+Real-time sign language recognition system leveraging YOLOv8 image classification and OpenCV.
+Features real-time webcam frame processing, top-3 class predictions with confidence scores, customized visual guidelines for hand placement, low-confidence warnings, and system health checks.
 
 #### 🧠 fake-news-detection (Private)
 **Tech:** Python
@@ -195,7 +212,8 @@ demonstrating problem-solving ability and optimization-oriented thinking.
   <strong>Topic:</strong> "Optimizing Time in Mining High Utility Itemsets on Positive and Negative Profit Transaction Databases"<br/>
   <strong>Team:</strong> Trần Dương Gia Bảo, Trần Gia Bảo<br/>
   <strong>Advisors:</strong> ThS. Vũ Văn Vinh, HV. Phạm Tấn Thuận<br/>
-  <strong>Date:</strong> April 4, 2026<br/><br/>
+  <strong>Date:</strong> April 4, 2026<br/>
+  <strong>Source Code:</strong> [HUIMiner](https://github.com/Peo051/HUIMiner) & [CLHMiner](https://github.com/Peo051/CLHMiner)<br/><br/>
   Participated in the Faculty-level Student Research Competition organized by the Faculty of Information Technology, 
   University of Industry and Trade (HUIT). Awarded the Encouragement Prize for research quality and innovative approach 
   in data mining optimization.
