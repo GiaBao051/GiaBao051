@@ -117,25 +117,6 @@ Team project focused on building a coffee chain management website with a modern
 consistent brand identity, and user-centered experience. This project demonstrates the ability to
 develop structured front-end interfaces aligned with practical business requirements.
 
-#### 🎮 [Maze Duel](https://github.com/Peo051/Gemini_Game)
-**Tech:** HTML5 Canvas | CSS3 | JavaScript (ES6+) | MQTT
-
-A 2D platformer maze game featuring offline play with advanced AI behavior and online multiplayer support.
-Implements randomized Prim's algorithm for maze generation, CSP solver for map validation, and Tarjan's algorithm for tactical choke-point detection. AI decision-making is powered by a hybrid FSM + Utility AI model and Minimax search for competitive CPU gameplay.
-
-#### 🤟 [YOLOv8 Sign Language Recognition](https://github.com/Peo051/YOLOv8_Detect_SignLanguage)
-**Tech:** Python | YOLOv8 | OpenCV | Jupyter Notebook
-
-Real-time sign language recognition system leveraging YOLOv8 image classification and OpenCV.
-Features real-time webcam frame processing, top-3 class predictions with confidence scores, customized visual guidelines for hand placement, low-confidence warnings, and system health checks.
-
-#### 🧠 fake-news-detection (Private)
-**Tech:** Python
-
-Research-oriented Python project for fake news detection, focused on text classification.
-The implementation strengthened data processing skills, machine learning pipeline development,
-and model evaluation in practical AI scenarios.
-
 #### 🧮 [Calculator](https://github.com/Peo051/Calculator)
 **Tech:** C# | WPF | .NET |
 
