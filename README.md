@@ -567,17 +567,33 @@ demonstrating problem-solving ability and optimization-oriented thinking.
 
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Peo051&theme=github_dark&v=10" height="160"/>
+<!-- Contribution overview -->
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Peo051&theme=github_dark&v=12" width="95%"/>
+
+<br/><br/>
+
+<!-- Core account stats + productive time -->
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Peo051&theme=github_dark&v=12" height="165"/>
 &nbsp;
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Peo051&theme=github_dark&v=10" height="160"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Peo051&theme=github_dark&utcOffset=7&v=12" height="165"/>
 
 <br/><br/>
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Peo051&theme=github_dark&utcOffset=7&v=11" height="150"/>
+<!-- Language distribution -->
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Peo051&theme=github_dark&v=12" height="165"/>
+&nbsp;
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Peo051&theme=github_dark&v=12" height="165"/>
 
 <br/><br/>
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Peo051&theme=github_dark&v=11" width="95%"/>
+<!-- Contribution streak -->
+
+<a href="https://git.io/streak-stats">
+  <img src="https://streak-stats.demolab.com?user=Peo051&theme=github-dark-blue&hide_border=true&background=0D1117&stroke=30363D&ring=58A6FF&fire=FF7B72&currStreakLabel=58A6FF&sideLabels=C9D1D9&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8B949E" height="180" alt="GitHub Streak"/>
+</a>
 
 </div>
 
