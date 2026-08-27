@@ -592,11 +592,12 @@ demonstrating problem-solving ability and optimization-oriented thinking.
 <!-- Contribution streak -->
 
 <!-- Contribution streak — generated daily by GitHub Actions -->
+<!-- GitHub contribution streak — alternative provider -->
 <a href="https://github.com/Peo051">
-  <img src="./profile/streak.svg" height="180" alt="GitHub Streak"/>
+  <img src="https://github-readme-stats-fast.vercel.app/api/streak?username=Peo051&theme=github_dark"
+       height="180"
+       alt="GitHub Contribution Streak"/>
 </a>
-
-</div>
 
 ---
 
