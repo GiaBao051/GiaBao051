@@ -591,8 +591,9 @@ demonstrating problem-solving ability and optimization-oriented thinking.
 
 <!-- Contribution streak -->
 
-<a href="https://git.io/streak-stats">
-  <img src="https://streak-stats.demolab.com?user=Peo051&theme=github-dark-blue&hide_border=true&background=0D1117&stroke=30363D&ring=58A6FF&fire=FF7B72&currStreakLabel=58A6FF&sideLabels=C9D1D9&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8B949E" height="180" alt="GitHub Streak"/>
+<!-- Contribution streak — generated daily by GitHub Actions -->
+<a href="https://github.com/Peo051">
+  <img src="./profile/streak.svg" height="180" alt="GitHub Streak"/>
 </a>
 
 </div>
