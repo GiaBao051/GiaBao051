@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-label="Coffee Shop Management System Architecture">
+  <defs>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
+      .flow2 { stroke-dasharray: 6 8; animation: moveFlow2 4s linear infinite; }
+      @keyframes moveFlow2 { to { stroke-dashoffset: -28; } }
+      @media (prefers-reduced-motion: reduce) { .flow2 { animation: none; } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="220" rx="16" fill="#000000" stroke="#1F2937" stroke-width="1.5"/>
+
+  <!-- Top Title -->
+  <text x="50" y="44" class="mono" font-size="19" font-weight="700" letter-spacing="1.5" fill="#58A6FF">ARCHITECTURE // COFFEE MANAGEMENT &amp; PAYMENT SYSTEM</text>
+
+  <!-- Connectors -->
+  <path d="M 290 125 L 340 125" class="flow2" stroke="#58A6FF" stroke-width="2.5" fill="none"/>
+  <polygon points="340,120 350,125 340,130" fill="#58A6FF"/>
+
+  <path d="M 580 125 L 630 125" class="flow2" stroke="#58A6FF" stroke-width="2.5" fill="none"/>
+  <polygon points="630,120 640,125 630,130" fill="#58A6FF"/>
+
+  <path d="M 870 125 L 920 125" class="flow2" stroke="#58A6FF" stroke-width="2.5" fill="none"/>
+  <polygon points="920,120 930,125 920,130" fill="#58A6FF"/>
+
+  <!-- Node 1: WPF Client -->
+  <g transform="translate(50, 75)">
+    <rect width="240" height="100" rx="12" fill="#080E17" stroke="#58A6FF" stroke-width="1.5"/>
+    <text x="120" y="42" text-anchor="middle" class="sans" font-size="22" font-weight="700" fill="#FFFFFF">WPF Client</text>
+    <text x="120" y="74" text-anchor="middle" class="mono" font-size="18" font-weight="500" fill="#94A3B8">.NET 8 · MVVM · POS</text>
+  </g>
+
+  <!-- Node 2: Database -->
+  <g transform="translate(340, 75)">
+    <rect width="240" height="100" rx="12" fill="#080E17" stroke="#3FB950" stroke-width="1.5"/>
+    <text x="120" y="42" text-anchor="middle" class="sans" font-size="22" font-weight="700" fill="#FFFFFF">SQL Server Core</text>
+    <text x="120" y="74" text-anchor="middle" class="mono" font-size="18" font-weight="500" fill="#94A3B8">Dapper ORM · Inventory</text>
+  </g>
+
+  <!-- Node 3: Payment API -->
+  <g transform="translate(630, 75)">
+    <rect width="240" height="100" rx="12" fill="#080E17" stroke="#58A6FF" stroke-width="1.5"/>
+    <text x="120" y="42" text-anchor="middle" class="sans" font-size="22" font-weight="700" fill="#FFFFFF">Payment Web API</text>
+    <text x="120" y="74" text-anchor="middle" class="mono" font-size="18" font-weight="500" fill="#94A3B8">ASP.NET Core 8</text>
+  </g>
+
+  <!-- Node 4: VietQR PayOS -->
+  <g transform="translate(920, 75)">
+    <rect width="230" height="100" rx="12" fill="#080E17" stroke="#22D3EE" stroke-width="1.5"/>
+    <text x="115" y="42" text-anchor="middle" class="sans" font-size="22" font-weight="700" fill="#FFFFFF">PayOS VietQR</text>
+    <text x="115" y="74" text-anchor="middle" class="mono" font-size="18" font-weight="500" fill="#94A3B8">HMAC-SHA256 Webhook</text>
+  </g>
+</svg>
