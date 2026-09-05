@@ -16,7 +16,6 @@
 
 <br/>
 
------------
 <p align="center">
   <img src="./assets/motion/hero-motion.svg"
        width="100%"
@@ -38,6 +37,33 @@
        width="100%"
        alt="GitHub contribution activity"/>
 </p>
+
+-----------
+
+### 👤 About Me
+
+```yaml
+# Trần Dương Gia Bảo — Software Engineering Student
+
+location    : Ho Chi Minh City, Vietnam
+university  : University of Industry and Trade (HUIT)
+major       : Information Technology — Applied Computing
+email       : tranduonggiabao0501email@gmail.com
+
+focus:
+  - Backend development with .NET / ASP.NET Core
+  - Object-Oriented Design & Clean Architecture
+  - Relational databases (SQL Server, T-SQL)
+  - Applied AI & Data Science (exploring)
+
+currently:
+  - Building foundational engineering skills through academic projects
+  - Participating in university-level technical competitions
+  - Deepening understanding of system design & software architecture
+
+goal: Become a reliable, impact-driven software engineer
+      with strong fundamentals and a growth mindset.
+```
 
 ---
 
