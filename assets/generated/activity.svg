@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="235" viewBox="0 0 1200 235">
+<defs><style>
+.e{font:600 12px ui-monospace,Menlo,Consolas,monospace;letter-spacing:2px;fill:#58A6FF}.s{font:500 13px ui-monospace,Menlo,Consolas,monospace;fill:#7F97AE}.x{animation:x 4s linear infinite}@keyframes x{from{transform:translateX(0)}to{transform:translateX(860px)}}@media(prefers-reduced-motion:reduce){.x{animation:none}}
+</style></defs>
+<rect width="1200" height="235" rx="22" fill="#081522"/><rect x="1" y="1" width="1198" height="233" rx="21" fill="none" stroke="#20364C"/>
+<text x="54" y="48" class="e">ACTIVITY / LIVE AFTER FIRST RUN</text><text x="54" y="74" class="s">The Action will replace this preview with a 12-week contribution pulse.</text>
+<g class="x"><line x1="54" y1="100" x2="54" y2="195" stroke="#5EEAD4"/><circle cx="54" cy="100" r="4" fill="#5EEAD4"/></g>
+</svg>

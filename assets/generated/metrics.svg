@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+<defs>
+<linearGradient id="bg" x1="0" x2="1"><stop stop-color="#07111F"/><stop offset="1" stop-color="#0B202C"/></linearGradient>
+<linearGradient id="a" x1="0" x2="1"><stop stop-color="#58A6FF"/><stop offset=".5" stop-color="#22D3EE"/><stop offset="1" stop-color="#A78BFA"/></linearGradient>
+<style>
+.t{font:700 24px Inter,Segoe UI,Arial,sans-serif;fill:#F4F8FC}.e{font:600 12px ui-monospace,Menlo,Consolas,monospace;letter-spacing:2px;fill:#58A6FF}.s{font:500 14px ui-monospace,Menlo,Consolas,monospace;fill:#7E96AD}.p{animation:p 2s ease-in-out infinite}@keyframes p{50%{opacity:.35}}@media(prefers-reduced-motion:reduce){.p{animation:none}}
+</style>
+</defs>
+<rect width="1200" height="360" rx="24" fill="url(#bg)"/><rect x="1" y="1" width="1198" height="358" rx="23" fill="none" stroke="#223A53"/>
+<text x="58" y="55" class="e">LIVE / ENGINEERING TELEMETRY</text>
+<text x="58" y="92" class="t">Waiting for the first GitHub Actions render</text>
+<line x1="58" y1="126" x2="1142" y2="126" stroke="#1D344A"/>
+<circle cx="67" cy="178" r="7" fill="#22D3EE" class="p"/><text x="88" y="184" class="s">workflow_dispatch → render-profile.mjs → metrics.svg</text>
+<rect x="58" y="228" width="1084" height="10" rx="5" fill="#14283B"/><rect x="58" y="228" width="620" height="10" rx="5" fill="url(#a)" class="p"/>
+<text x="58" y="282" class="s">This placeholder is overwritten with live public GitHub data after the workflow runs.</text>
+</svg>
