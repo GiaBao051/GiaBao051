@@ -25,7 +25,7 @@
 
   
       <g transform="translate(50 125)">
-        <text class="metric-value" y="0">16</text>
+        <text class="metric-value" y="0">19</text>
         <text class="metric-label" y="32">PUBLIC REPOS</text>
       </g>
       <g transform="translate(325 125)">
@@ -33,12 +33,12 @@
         <text class="metric-label" y="32">FOLLOWERS</text>
       </g>
       <g transform="translate(600 125)">
-        <text class="metric-value" y="0">0</text>
+        <text class="metric-value" y="0">2</text>
         <text class="metric-label" y="32">STARS</text>
       </g>
       <g transform="translate(875 125)">
-        <text class="metric-value" y="0">17</text>
-        <text class="metric-label" y="32">ACTIVITY / 28D</text>
+        <text class="metric-value" y="0">2.5K</text>
+        <text class="metric-label" y="32">CONTRIBUTIONS</text>
       </g>
 
   <line x1="50" y1="190" x2="1150" y2="190" stroke="#1F2937" stroke-width="1.5"/>
@@ -52,7 +52,7 @@
 
   <g transform="translate(680, 235)">
     <text x="0" y="0" class="eyebrow" fill="#A78BFA">CORE LANGUAGES</text>
-    <text x="0" y="36" class="signal">JavaScript (4)  ·  C# (4)  ·  Java (3)</text>
+    <text x="0" y="36" class="signal">JavaScript (5)  ·  C# (5)  ·  Java (3)</text>
     <text x="0" y="70" class="small">Tracked from public repositories</text>
   </g>
 </svg>

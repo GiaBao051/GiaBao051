@@ -1,36 +1,36 @@
 {
-  "generatedAt": "2026-09-05T17:57:44.333Z",
+  "generatedAt": "2026-09-05T17:58:33.704Z",
   "user": "Peo051",
-  "source": "rest-fallback",
+  "source": "graphql",
   "metrics": {
-    "publicRepos": 16,
+    "publicRepos": 19,
     "followers": 8,
-    "stars": 0,
+    "stars": 2,
     "forks": 0,
-    "contributions": null,
-    "contributionsLast28Days": 17,
+    "contributions": 2535,
+    "contributionsLast28Days": 152,
     "currentRepository": "love-sense-ai",
     "currentRepositoryUrl": "https://github.com/Peo051/love-sense-ai",
     "lastPush": "2026-09-05T17:22:38Z",
     "languages": [
       {
         "name": "JavaScript",
-        "count": 4
+        "count": 5
       },
       {
         "name": "C#",
-        "count": 4
+        "count": 5
       },
       {
         "name": "Java",
         "count": 3
       },
       {
-        "name": "TypeScript",
-        "count": 1
+        "name": "HTML",
+        "count": 2
       },
       {
-        "name": "Dart",
+        "name": "TypeScript",
         "count": 1
       }
     ]
