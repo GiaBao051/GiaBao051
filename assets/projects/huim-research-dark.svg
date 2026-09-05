@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-label="HUIM Research Program Pipeline">
+  <defs>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif; }
+      .flow-arrow { stroke-dasharray: 5 5; animation: dashMove3 4s linear infinite; }
+      @keyframes dashMove3 { to { stroke-dashoffset: -20; } }
+      @media (prefers-reduced-motion: reduce) { .flow-arrow { animation: none; } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="390" rx="18" fill="#07111F"/>
+  <rect x="1" y="1" width="1198" height="388" rx="17" fill="none" stroke="#1E344A" stroke-width="1.5"/>
+
+  <!-- Section Header -->
+  <g transform="translate(48, 38)">
+    <rect x="0" y="-18" width="118" height="24" rx="6" fill="#211B3B" stroke="#A78BFA" stroke-width="1"/>
+    <text x="59" y="-2" text-anchor="middle" class="mono" font-size="10" font-weight="700" fill="#A78BFA">FLAGSHIP 03</text>
+    
+    <text x="136" y="0" class="sans" font-size="20" font-weight="800" fill="#F0F6FC">HUIM Research Program</text>
+    <text x="410" y="0" class="sans" font-size="15" font-weight="600" fill="#A78BFA">— High-Utility Itemset Mining</text>
+    
+    <!-- Prize Badge -->
+    <g transform="translate(730, -18)">
+      <rect width="374" height="24" rx="6" fill="#172A24" stroke="#3FB950" stroke-width="1"/>
+      <text x="187" y="16" text-anchor="middle" class="sans" font-size="11" font-weight="700" fill="#3FB950">🏅 Student Research Competition HUIT · Encouragement Prize</text>
+    </g>
+    
+    <text x="0" y="24" class="sans" font-size="13" font-weight="400" fill="#A8B8C7">
+      Topic: "Optimizing Time in Mining High Utility Itemsets on Positive and Negative Profit Transaction Databases".
+    </text>
+  </g>
+
+  <!-- Research Pipeline 4 Columns -->
+  <g transform="translate(48, 106)">
+    <!-- Column 1: Input &amp; Data Modeling -->
+    <g transform="translate(0, 0)">
+      <rect width="240" height="165" rx="12" fill="#0D1A2B" stroke="#223B53" stroke-width="1.2"/>
+      <rect x="0" y="0" width="240" height="32" rx="12" fill="#112235"/>
+      <text x="14" y="21" class="mono" font-size="11" font-weight="700" fill="#F0F6FC">01 // TRANSACTION DB</text>
+
+      <g transform="translate(14, 52)">
+        <text x="0" y="0" class="sans" font-size="13" font-weight="700" fill="#F0F6FC">Database &amp; Profits</text>
+        <text x="0" y="22" class="mono" font-size="11" font-weight="500" fill="#A8B8C7">• Transactions with Quantities</text>
+        <text x="0" y="42" class="mono" font-size="11" font-weight="500" fill="#A8B8C7">• Positive &amp; Negative Profits</text>
+        <text x="0" y="62" class="mono" font-size="11" font-weight="500" fill="#A8B8C7">• Transaction Utility (TU)</text>
+        <text x="0" y="82" class="mono" font-size="11" font-weight="500" fill="#22D3EE">• Subtree Utility Evaluation</text>
+      </g>
+    </g>
+
+    <!-- Connector 1 -> 2 -->
+    <path d="M 240 82 L 288 82" class="flow-arrow" stroke="#A78BFA" stroke-width="2" fill="none"/>
+    <polygon points="288,78 298,82 288,86" fill="#A78BFA"/>
+
+    <!-- Column 2: Data Structure Representation -->
+    <g transform="translate(298, 0)">
+      <rect width="250" height="165" rx="12" fill="#0D1A2B" stroke="#223B53" stroke-width="1.2"/>
+      <rect x="0" y="0" width="250" height="32" rx="12" fill="#181E38"/>
+      <text x="14" y="21" class="mono" font-size="11" font-weight="700" fill="#A78BFA">02 // UTILITY STRUCTURES</text>
+
+      <g transform="translate(14, 52)">
+        <text x="0" y="0" class="sans" font-size="13" font-weight="700" fill="#F0F6FC">Utility-List &amp; Taxonomy</text>
+        <text x="0" y="22" class="mono" font-size="11" font-weight="500" fill="#A8B8C7">• UtilityList [TID, iutils, rutils]</text>
+        <text x="0" y="42" class="mono" font-size="11" font-weight="500" fill="#A8B8C7">• Taxonomy Trees &amp; Nodes</text>
+        <text x="0" y="62" class="mono" font-size="11" font-weight="500" fill="#A8B8C7">• Upper-Bound Pruning Rules</text>
+        <text x="0" y="82" class="mono" font-size="11" font-weight="500" fill="#A78BFA">• Negative Item Split Handling</text>
+      </g>
+    </g>
+
+    <!-- Connector 2 -> 3 -->
+    <path d="M 548 82 L 596 82" class="flow-arrow" stroke="#A78BFA" stroke-width="2" fill="none"/>
+    <polygon points="596,78 606,82 596,86" fill="#A78BFA"/>
+
+    <!-- Column 3: Algorithms Family -->
+    <g transform="translate(606, 0)">
+      <rect width="270" height="165" rx="12" fill="#0D1A2B" stroke="#223B53" stroke-width="1.2"/>
+      <rect x="0" y="0" width="270" height="32" rx="12" fill="#211A3A"/>
+      <text x="14" y="21" class="mono" font-size="11" font-weight="700" fill="#A78BFA">03 // ALGORITHM ENGINES</text>
+
+      <g transform="translate(14, 52)">
+        <text x="0" y="0" class="sans" font-size="13" font-weight="700" fill="#F0F6FC">HUIM Series Implementations</text>
+        <text x="0" y="22" class="mono" font-size="11" font-weight="600" fill="#A78BFA">• HUIMiner (Utility-list baseline)</text>
+        <text x="0" y="42" class="mono" font-size="11" font-weight="600" fill="#A78BFA">• CLHMiner (Cross-level taxonomy)</text>
+        <text x="0" y="62" class="mono" font-size="11" font-weight="600" fill="#A78BFA">• FEACP (Efficient candidate pruning)</text>
+        <text x="0" y="82" class="mono" font-size="11" font-weight="500" fill="#71869A">• Java High-performance loops</text>
+      </g>
+    </g>
+
+    <!-- Connector 3 -> 4 -->
+    <path d="M 876 82 L 924 82" class="flow-arrow" stroke="#A78BFA" stroke-width="2" fill="none"/>
+    <polygon points="924,78 934,82 924,86" fill="#A78BFA"/>
+
+    <!-- Column 4: Benchmarking &amp; Proof -->
+    <g transform="translate(934, 0)">
+      <rect width="170" height="165" rx="12" fill="#0D1A2B" stroke="#223B53" stroke-width="1.2"/>
+      <rect x="0" y="0" width="170" height="32" rx="12" fill="#122624"/>
+      <text x="14" y="21" class="mono" font-size="11" font-weight="700" fill="#3FB950">04 // METRICS</text>
+
+      <g transform="translate(14, 52)">
+        <text x="0" y="0" class="sans" font-size="13" font-weight="700" fill="#F0F6FC">Profiling</text>
+        <text x="0" y="22" class="mono" font-size="11" font-weight="500" fill="#A8B8C7">• MemoryLogger</text>
+        <text x="0" y="42" class="mono" font-size="11" font-weight="500" fill="#A8B8C7">• Execution Time (ms)</text>
+        <text x="0" y="62" class="mono" font-size="11" font-weight="500" fill="#A8B8C7">• Candidate Count</text>
+        <text x="0" y="82" class="mono" font-size="11" font-weight="500" fill="#3FB950">• MinUtil Sensitivity</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Signals Bar -->
+  <g transform="translate(48, 305)">
+    <rect width="1104" height="54" rx="10" fill="#0A1726" stroke="#223B53" stroke-width="1"/>
+    
+    <g transform="translate(20, 32)">
+      <text x="0" y="0" class="mono" font-size="11" font-weight="700" fill="#A78BFA">PAPERS &amp; REPOS // </text>
+      <text x="140" y="0" class="mono" font-size="12" font-weight="600" fill="#F0F6FC">Peo051/HUIMiner</text>
+      <text x="290" y="0" class="mono" font-size="11" fill="#71869A">·</text>
+      <text x="310" y="0" class="mono" font-size="12" font-weight="600" fill="#F0F6FC">Peo051/CLHMiner</text>
+      <text x="460" y="0" class="mono" font-size="11" fill="#71869A">·</text>
+      <text x="480" y="0" class="mono" font-size="12" font-weight="600" fill="#F0F6FC">Peo051/FEACP</text>
+      <text x="610" y="0" class="mono" font-size="11" fill="#71869A">|</text>
+      <text x="630" y="0" class="sans" font-size="12" font-weight="600" fill="#A8B8C7">Advisors: ThS. Vũ Văn Vinh, HV. Phạm Tấn Thuận (04/2026)</text>
+    </g>
+  </g>
+</svg>
