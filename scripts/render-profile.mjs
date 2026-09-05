@@ -259,30 +259,16 @@ function renderMetrics(summary) {
   ];
 
   const statsSvg = stats.map(([label, value], i) => {
-    const x = 58 + i * 205;
+    const x = 50 + i * 275;
     return `
-      <g transform="translate(${x} 105)">
+      <g transform="translate(${x} 125)">
         <text class="metric-value" y="0">${escapeXml(compact(value))}</text>
-        <text class="metric-label" y="29">${escapeXml(label)}</text>
+        <text class="metric-label" y="32">${escapeXml(label)}</text>
       </g>`;
   }).join("");
 
-  const langTotal = Math.max(1, summary.languages.reduce((s, x) => s + x.count, 0));
-  let langOffset = 0;
-  const langBars = summary.languages.map((lang, i) => {
-    const width = Math.max(18, Math.round((lang.count / langTotal) * 295));
-    const y = 218 + i * 25;
-    const result = `
-      <g>
-        <text x="890" y="${y}" class="lang-name">${escapeXml(lang.name)}</text>
-        <rect x="1003" y="${y - 11}" width="145" height="8" rx="4" fill="#15263A"/>
-        <rect x="1003" y="${y - 11}" width="${Math.min(145, width)}" height="8" rx="4" class="lang-bar">
-          <animate attributeName="width" from="0" to="${Math.min(145, width)}" dur="${0.55 + i * 0.08}s" fill="freeze"/>
-        </rect>
-      </g>`;
-    langOffset += width;
-    return result;
-  }).join("");
+  const topLangs = summary.languages.slice(0, 3);
+  const langText = topLangs.map((l) => `${l.name} (${l.count})`).join("  ·  ");
 
   const pushed = summary.lastPush
     ? new Date(summary.lastPush).toLocaleDateString("en-GB", {
@@ -293,96 +279,69 @@ function renderMetrics(summary) {
       })
     : "—";
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="Live GitHub engineering metrics">
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-label="Live GitHub engineering metrics">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360">
-      <stop stop-color="#07111F"/>
-      <stop offset=".62" stop-color="#09192A"/>
-      <stop offset="1" stop-color="#0B202C"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0" x2="1">
-      <stop stop-color="#58A6FF"/>
-      <stop offset=".52" stop-color="#22D3EE"/>
-      <stop offset="1" stop-color="#A78BFA"/>
-    </linearGradient>
-    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M28 0H0V28" fill="none" stroke="#16304B" stroke-width="1" opacity=".32"/>
-    </pattern>
     <style>
       .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-      .title { font: 700 22px Inter, Segoe UI, Arial, sans-serif; fill: #F4F8FC; }
-      .eyebrow { font: 600 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 2px; fill: #58A6FF; }
-      .metric-value { font: 700 31px Inter, Segoe UI, Arial, sans-serif; fill: #F7FAFD; }
-      .metric-label { font: 600 10px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 1.4px; fill: #7E96AD; }
-      .signal { font: 600 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #DDEAF5; }
-      .small { font: 500 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #7891A9; }
-      .lang-name { font: 600 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #A9BDD0; }
-      .lang-bar { fill: url(#accent); }
-      .pulse { animation: pulse 2.4s ease-in-out infinite; transform-origin: center; }
-      .scan { animation: scan 6s linear infinite; }
-      @keyframes pulse { 0%,100% { opacity:.35 } 50% { opacity:1 } }
-      @keyframes scan { from { transform: translateX(-280px) } to { transform: translateX(1280px) } }
-      @media (prefers-reduced-motion: reduce) {
-        .pulse, .scan { animation: none; }
-      }
+      .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
+      .eyebrow { font: 700 19px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 2px; fill: #58A6FF; }
+      .metric-value { font: 800 44px Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; fill: #FFFFFF; }
+      .metric-label { font: 700 18px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 1.2px; fill: #94A3B8; }
+      .signal { font: 700 24px Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; fill: #FFFFFF; }
+      .small { font: 500 18px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #94A3B8; }
+      .pulse { animation: pulseAnim 2.4s ease-in-out infinite; }
+      @keyframes pulseAnim { 0%,100% { opacity:.4 } 50% { opacity:1 } }
+      @media (prefers-reduced-motion: reduce) { .pulse { animation: none; } }
     </style>
   </defs>
 
-  <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
-  <rect x="1" y="1" width="1198" height="358" rx="23" fill="none" stroke="#223A53"/>
-  <rect width="1200" height="360" rx="24" fill="url(#grid)"/>
+  <!-- Pure Black Background -->
+  <rect width="1200" height="340" rx="20" fill="#000000"/>
+  <rect x="1" y="1" width="1198" height="338" rx="19" fill="none" stroke="#1F2937" stroke-width="1.8"/>
 
-  <g class="scan" opacity=".42">
-    <rect x="-210" y="0" width="210" height="360" fill="url(#accent)" opacity=".05"/>
-    <line x1="0" y1="16" x2="0" y2="344" stroke="#22D3EE" stroke-width="1"/>
+  <g transform="translate(50, 48)">
+    <circle cx="6" cy="-5" r="5" fill="#3FB950" class="pulse"/>
+    <text x="22" y="0" class="eyebrow">LIVE GITHUB METRICS // TELEMETRY</text>
   </g>
-
-  <text x="58" y="49" class="eyebrow">LIVE / ENGINEERING TELEMETRY</text>
-  <text x="58" y="80" class="title">GitHub signal, rendered by this repository</text>
 
   ${statsSvg}
 
-  <line x1="58" y1="171" x2="1142" y2="171" stroke="#1D344A"/>
+  <line x1="50" y1="190" x2="1150" y2="190" stroke="#1F2937" stroke-width="1.5"/>
 
-  <g transform="translate(58 207)">
-    <circle cx="5" cy="4" r="5" fill="#3FB950" class="pulse"/>
-    <text x="21" y="9" class="eyebrow" fill="#3FB950">CURRENT SIGNAL</text>
-    <text x="0" y="51" class="signal">${escapeXml(summary.currentRepo)}</text>
-    <text x="0" y="76" class="small">last public push · ${escapeXml(pushed)}</text>
-
-    <text x="0" y="125" class="small">source · ${escapeXml(summary.source)}</text>
-    <text x="165" y="125" class="small">forks · ${escapeXml(compact(summary.forks))}</text>
-    <text x="285" y="125" class="small">28d contributions · ${escapeXml(compact(summary.contributions28))}</text>
+  <!-- Lower Details -->
+  <g transform="translate(50, 235)">
+    <text x="0" y="0" class="eyebrow" fill="#22D3EE">LATEST ACTIVE REPOSITORY</text>
+    <text x="0" y="36" class="signal">${escapeXml(summary.currentRepo)}</text>
+    <text x="0" y="70" class="small">Last public push: ${escapeXml(pushed)}</text>
   </g>
 
-  <text x="890" y="198" class="eyebrow">LANGUAGE FOOTPRINT</text>
-  ${langBars}
-
-  <path d="M816 193V327" stroke="#1D344A"/>
+  <g transform="translate(680, 235)">
+    <text x="0" y="0" class="eyebrow" fill="#A78BFA">CORE LANGUAGES</text>
+    <text x="0" y="36" class="signal">${escapeXml(langText || "C#  ·  TypeScript  ·  Python")}</text>
+    <text x="0" y="70" class="small">Tracked from public repositories</text>
+  </g>
 </svg>`;
 }
 
 function renderActivity(summary) {
   const days = summary.days.slice(-84);
   const width = 1200;
-  const x0 = 54;
-  const y0 = 85;
-  const gap = 4;
-  const cell = 14;
+  const x0 = 50;
+  const y0 = 95;
+  const gap = 6;
+  const cell = 18;
 
-  const colors = ["#132235", "#163B4D", "#176B75", "#20A7A0", "#5EEAD4"];
+  const colors = ["#0A121D", "#0E3047", "#125A6B", "#1DA598", "#5EEAD4"];
 
   const cells = days.map((day, index) => {
     const col = Math.floor(index / 7);
     const row = index % 7;
     const x = x0 + col * (cell + gap);
     const y = y0 + row * (cell + gap);
-    const delay = (index % 17) * 0.025;
     return `
       <g>
-        <rect x="${x}" y="${y}" width="${cell}" height="${cell}" rx="3"
-              fill="${colors[day.level]}" opacity=".96">
-          <animate attributeName="opacity" values=".55;1;.78" dur="2.8s" begin="${delay}s" repeatCount="indefinite"/>
+        <rect x="${x}" y="${y}" width="${cell}" height="${cell}" rx="4"
+              fill="${colors[day.level]}" stroke="#132335" stroke-width="0.8">
         </rect>
         <title>${escapeXml(day.date)} · ${day.contributionCount} contribution(s)</title>
       </g>`;
@@ -395,49 +354,37 @@ function renderActivity(summary) {
     { contributionCount: 0, date: "—" }
   );
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="235" viewBox="0 0 ${width} 235" role="img" aria-label="Animated 12-week GitHub contribution pulse">
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="280" viewBox="0 0 ${width} 280" role="img" aria-label="12-week GitHub contribution activity">
   <defs>
-    <linearGradient id="wave" x1="0" x2="1">
-      <stop stop-color="#58A6FF"/>
-      <stop offset=".5" stop-color="#22D3EE"/>
-      <stop offset="1" stop-color="#A78BFA"/>
-    </linearGradient>
     <style>
-      .eyebrow { font: 600 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 2px; fill: #58A6FF; }
-      .label { font: 500 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #7F97AE; }
-      .value { font: 700 18px Inter, Segoe UI, Arial, sans-serif; fill: #EDF5FC; }
-      .sweep { animation: sweep 5.5s linear infinite; }
-      @keyframes sweep { from { transform: translateX(-40px) } to { transform: translateX(860px) } }
-      @media (prefers-reduced-motion: reduce) { .sweep { animation:none; } }
+      .eyebrow { font: 700 19px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 2px; fill: #58A6FF; }
+      .label { font: 600 18px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #94A3B8; }
+      .value { font: 800 28px Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; fill: #FFFFFF; }
     </style>
   </defs>
 
-  <rect width="${width}" height="235" rx="22" fill="#081522"/>
-  <rect x="1" y="1" width="${width - 2}" height="233" rx="21" fill="none" stroke="#20364C"/>
+  <rect width="${width}" height="280" rx="20" fill="#000000"/>
+  <rect x="1" y="1" width="${width - 2}" height="278" rx="19" fill="none" stroke="#1F2937" stroke-width="1.8"/>
 
-  <text x="54" y="44" class="eyebrow">ACTIVITY / LAST 12 WEEKS</text>
-  <text x="54" y="65" class="label">Contribution pulse generated from GitHub data</text>
+  <text x="50" y="52" class="eyebrow">ACTIVITY // LAST 12 WEEKS</text>
 
   ${cells}
 
-  <g class="sweep" opacity=".6">
-    <line x1="54" y1="77" x2="54" y2="215" stroke="#5EEAD4" stroke-width="1.5"/>
-    <circle cx="54" cy="77" r="3" fill="#5EEAD4"/>
+  <line x1="820" y1="40" x2="820" y2="240" stroke="#1F2937" stroke-width="1.5"/>
+
+  <g transform="translate(860, 80)">
+    <text x="0" y="0" class="label">CONTRIBUTIONS (84D)</text>
+    <text x="0" y="36" class="value">${escapeXml(compact(total84))}</text>
+
+    <text x="0" y="85" class="label">ACTIVE DAYS</text>
+    <text x="0" y="121" class="value">${escapeXml(activeDays)}</text>
   </g>
 
-  <line x1="855" y1="34" x2="855" y2="203" stroke="#1C3348"/>
-
-  <text x="900" y="67" class="label">CONTRIBUTIONS / 84D</text>
-  <text x="900" y="94" class="value">${escapeXml(compact(total84))}</text>
-
-  <text x="900" y="128" class="label">ACTIVE DAYS</text>
-  <text x="900" y="155" class="value">${escapeXml(activeDays)}</text>
-
-  <text x="1035" y="128" class="label">PEAK DAY</text>
-  <text x="1035" y="155" class="value">${escapeXml(compact(maxDay.contributionCount))}</text>
-  <text x="1035" y="177" class="label">${escapeXml(maxDay.date)}</text>
-
-  <line x1="900" y1="195" x2="1138" y2="195" stroke="url(#wave)" stroke-width="2"/>
+  <g transform="translate(1030, 80)">
+    <text x="0" y="0" class="label">PEAK RECORD</text>
+    <text x="0" y="36" class="value">${escapeXml(compact(maxDay.contributionCount))}</text>
+    <text x="0" y="70" class="label">${escapeXml(maxDay.date)}</text>
+  </g>
 </svg>`;
 }
 
