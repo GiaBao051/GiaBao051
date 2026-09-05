@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="Gia Bảo Monogram">
+  <defs>
+    <linearGradient id="monoGrad" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#58A6FF"/>
+      <stop offset="50%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#A78BFA"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F1B2A"/>
+      <stop offset="100%" stop-color="#08131F"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="2" y="2" width="116" height="116" rx="22" fill="url(#bgGrad)" stroke="#1E344A" stroke-width="1.5"/>
+  <rect x="8" y="8" width="104" height="104" rx="16" fill="none" stroke="#233B53" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.6"/>
+
+  <!-- Technical Marks -->
+  <line x1="2" y1="20" x2="20" y2="2" stroke="#58A6FF" stroke-width="1.5" opacity="0.8"/>
+  <line x1="100" y1="118" x2="118" y2="100" stroke="#22D3EE" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="110" cy="10" r="2.5" fill="#22D3EE"/>
+  <circle cx="10" cy="110" r="2.5" fill="#58A6FF"/>
+
+  <!-- G &amp; B Paths -->
+  <!-- G: Outer curve and horizontal bar -->
+  <path d="M 52 38 L 38 38 C 29 38 23 44 23 53 L 23 67 C 23 76 29 82 38 82 L 52 82 C 60 82 66 76 66 67 L 66 60 L 46 60"
+        fill="none" stroke="url(#monoGrad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- B: Spine and double loop -->
+  <path d="M 68 38 L 84 38 C 91 38 96 42 96 48 C 96 54 91 58 84 58 L 68 58 L 85 58 C 92 58 98 63 98 70 C 98 77 92 82 85 82 L 68 82 Z"
+        fill="none" stroke="url(#monoGrad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <circle cx="68" cy="60" r="3" fill="#3FB950"/>
+</svg>

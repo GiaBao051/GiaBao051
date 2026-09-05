@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="370" viewBox="0 0 1200 370" role="img" aria-label="Trần Dương Gia Bảo — Engineering Dossier">
+  <defs>
+    <linearGradient id="heroGrad_dark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#58A6FF"/>
+      <stop offset="50%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#A78BFA"/>
+    </linearGradient>
+    <pattern id="grid_dark" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#16304B" stroke-width="1" opacity="0.32"/>
+    </pattern>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif; }
+      .scan { animation: scanLine 7s linear infinite; }
+      .pulse-beacon { animation: beaconPulse 2.2s ease-in-out infinite; }
+      .flow-path { stroke-dasharray: 6 8; animation: flowDash 3.5s linear infinite; }
+      @keyframes scanLine {
+        0% { transform: translateX(-240px); opacity: 0.1; }
+        50% { opacity: 0.4; }
+        100% { transform: translateX(1240px); opacity: 0.1; }
+      }
+      @keyframes beaconPulse {
+        0%, 100% { opacity: 0.4; transform: scale(0.92); }
+        50% { opacity: 1; transform: scale(1.08); }
+      }
+      @keyframes flowDash {
+        to { stroke-dashoffset: -28; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .scan, .pulse-beacon, .flow-path { animation: none; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="370" rx="20" fill="#07111F"/>
+  <rect width="1200" height="370" rx="20" fill="url(#grid_dark)"/>
+  <rect x="1" y="1" width="1198" height="368" rx="19" fill="none" stroke="#1E344A" stroke-width="1.5"/>
+
+  <!-- Scanning Ray -->
+  <g class="scan" opacity="0.35">
+    <rect x="-180" y="0" width="180" height="370" fill="url(#heroGrad_dark)" opacity="0.04"/>
+    <line x1="0" y1="12" x2="0" y2="358" stroke="#22D3EE" stroke-width="1.2"/>
+  </g>
+
+  <!-- Top Header Metadata Line -->
+  <g transform="translate(56, 42)">
+    <circle cx="4" cy="4" r="4.5" fill="#3FB950" class="pulse-beacon"/>
+    <text x="18" y="8" class="mono" font-size="11" font-weight="700" letter-spacing="2" fill="#58A6FF">PEO051 / ENGINEERING DOSSIER</text>
+    <text x="310" y="8" class="mono" font-size="11" font-weight="500" fill="#71869A">// IDENTITY RECORD</text>
+    <text x="1088" y="8" text-anchor="end" class="mono" font-size="11" font-weight="600" fill="#71869A">RELEASE v2026.09</text>
+    <line x1="0" y1="20" x2="1088" y2="20" stroke="#1E344A" stroke-width="1" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- Left Hero Details -->
+  <g transform="translate(56, 110)">
+    <!-- Identity Name -->
+    <text x="0" y="0" class="sans" font-size="36" font-weight="800" fill="#F0F6FC" letter-spacing="-0.5">TRẦN DƯƠNG GIA BẢO</text>
+
+    <!-- Positioning &amp; Focus -->
+    <text x="0" y="42" class="sans" font-size="20" font-weight="700" fill="#F0F6FC">
+      SOFTWARE ENGINEERING <tspan fill="#22D3EE">×</tspan> APPLIED AI <tspan fill="#A78BFA">×</tspan> RESEARCH
+    </text>
+
+    <!-- Philosophy -->
+    <g transform="translate(0, 78)">
+      <rect x="0" y="0" width="440" height="32" rx="8" fill="#0D1B2D" stroke="#223B53" stroke-width="1"/>
+      <text x="14" y="20" class="mono" font-size="12" font-weight="600" fill="#A8B8C7">
+        build systems <tspan fill="#58A6FF">·</tspan> study algorithms <tspan fill="#22D3EE">·</tspan> measure results
+      </text>
+    </g>
+
+    <!-- Academic Coordinates -->
+    <g transform="translate(0, 134)">
+      <circle cx="5" cy="5" r="3" fill="#58A6FF"/>
+      <text x="16" y="9" class="mono" font-size="12" font-weight="600" fill="#A8B8C7">HUIT</text>
+      <text x="60" y="9" class="mono" font-size="12" font-weight="400" fill="#71869A">· Information Technology · Ho Chi Minh City</text>
+      <text x="375" y="9" class="mono" font-size="11" font-weight="500" fill="#71869A">[10.76°N, 106.66°E]</text>
+    </g>
+  </g>
+
+  <!-- Right Hero Topology Card -->
+  <g transform="translate(710, 84)">
+    <rect width="434" height="236" rx="16" fill="#0D1B2D" stroke="#223B53" stroke-width="1.2"/>
+    
+    <!-- Header of Topo Card -->
+    <g transform="translate(24, 30)">
+      <text x="0" y="0" class="mono" font-size="11" font-weight="700" letter-spacing="1.5" fill="#58A6FF">SYSTEM ARCHITECTURE TOPOLOGY</text>
+      <circle cx="386" cy="-4" r="3.5" fill="#3FB950"/>
+    </g>
+
+    <!-- Interactive Nodes and Dynamic Pipeline -->
+    <g transform="translate(24, 76)">
+      <!-- Connecting Flow Lines -->
+      <path d="M 75 32 L 145 32" class="flow-path" stroke="#58A6FF" stroke-width="2" fill="none"/>
+      <path d="M 225 32 L 295 32" class="flow-path" stroke="#22D3EE" stroke-width="2" fill="none"/>
+      <path d="M 185 58 L 185 96" class="flow-path" stroke="#A78BFA" stroke-width="2" fill="none"/>
+
+      <!-- Node 1: .NET / Systems -->
+      <g transform="translate(0, 8)">
+        <rect width="82" height="48" rx="10" fill="#132338" stroke="#58A6FF" stroke-width="1.4"/>
+        <text x="41" y="24" text-anchor="middle" class="sans" font-size="12" font-weight="700" fill="#F0F6FC">.NET 8</text>
+        <text x="41" y="38" text-anchor="middle" class="mono" font-size="9" font-weight="600" fill="#58A6FF">CORE SYS</text>
+      </g>
+
+      <!-- Node 2: Applied AI -->
+      <g transform="translate(144, 8)">
+        <rect width="82" height="48" rx="10" fill="#0E2838" stroke="#22D3EE" stroke-width="1.4"/>
+        <text x="41" y="24" text-anchor="middle" class="sans" font-size="12" font-weight="700" fill="#F0F6FC">AI APP</text>
+        <text x="41" y="38" text-anchor="middle" class="mono" font-size="9" font-weight="600" fill="#22D3EE">SOCRATIC</text>
+      </g>
+
+      <!-- Node 3: Research / HUIM -->
+      <g transform="translate(288, 8)">
+        <rect width="98" height="48" rx="10" fill="#221A3B" stroke="#A78BFA" stroke-width="1.4"/>
+        <text x="49" y="24" text-anchor="middle" class="sans" font-size="12" font-weight="700" fill="#F0F6FC">HUIM R&amp;D</text>
+        <text x="49" y="38" text-anchor="middle" class="mono" font-size="9" font-weight="600" fill="#A78BFA">DATA MINING</text>
+      </g>
+
+      <!-- Sub-node: Synthesis / Evaluation -->
+      <g transform="translate(130, 96)">
+        <rect width="110" height="34" rx="8" fill="#11252C" stroke="#3FB950" stroke-width="1.2"/>
+        <text x="55" y="21" text-anchor="middle" class="mono" font-size="10" font-weight="700" fill="#3FB950">BENCHMARKS</text>
+      </g>
+    </g>
+
+    <!-- Bottom Telemetry Ticker inside Card -->
+    <g transform="translate(24, 212)">
+      <line x1="0" y1="-14" x2="386" y2="-14" stroke="#223B53" stroke-width="1"/>
+      <text x="0" y="0" class="mono" font-size="10" font-weight="500" fill="#71869A">PIPELINE STATUS: VERIFIED</text>
+      <text x="386" y="0" text-anchor="end" class="mono" font-size="10" font-weight="600" fill="#58A6FF">3 FLAGSHIP REPOS</text>
+    </g>
+  </g>
+</svg>
